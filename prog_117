@@ -1,0 +1,6 @@
+n=int(input())
+a=97+n
+my_list=[]
+for i in range(97, a):
+    my_list+=chr(i)
+print(my_list) 
