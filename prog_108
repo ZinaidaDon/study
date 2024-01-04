@@ -1,0 +1,9 @@
+s =input()
+counter=0
+frequent_symbol=''
+for i in s:
+    if s.count(i)>=counter:
+        counter=s.count(i)
+        frequent_symbol=i
+        #print(i, counter)
+print(frequent_symbol)
