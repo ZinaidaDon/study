@@ -1,0 +1,6 @@
+par1=input()
+par2=input()
+if par1==par2:
+    print('Пароль принят')
+else :
+    print('Пароль не принят')
