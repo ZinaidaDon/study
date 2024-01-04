@@ -1,0 +1,4 @@
+a=str(input())
+while a!='КОНЕЦ' and a!='конец':
+    print(a)
+    a=str(input())
