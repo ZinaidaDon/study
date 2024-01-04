@@ -1,0 +1,5 @@
+a1, a2, a3, a4, a5=int(input()), int(input()), int(input()), int(input()), int(input())
+b1=max(a1, a2, a3, a4, a5)
+b2=min(a1, a2, a3, a4, a5)
+print('Наименьшее число =', b2)
+print('Наибольшее число =', b1)
