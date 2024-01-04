@@ -1,0 +1,4 @@
+katet=int(input())
+for i in range(katet):
+    n=katet-i
+    print('*'*n)
