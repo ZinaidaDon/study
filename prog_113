@@ -1,0 +1,12 @@
+n=int(input())
+s=input()
+s_1=''
+for i in range(len(s)):
+    tester=ord(s[i])-n
+    if 96<tester<123:
+        a=s[i]
+        s_1+=chr(ord(a)-n)
+    else:
+        a=s[i]
+        s_1+=chr(ord(a)-n+26)
+print(s_1)
