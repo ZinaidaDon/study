@@ -1,0 +1,18 @@
+a, b=int(input()), int(input())
+k=input()
+if k== '+' :
+    otvet=a+b
+    print(otvet)
+elif k== '-':
+    otvet=a-b
+    print(otvet)
+elif k=='/' and b==0:
+    print('На ноль делить нельзя!')
+elif k=='/':
+    otvet=a/b
+    print(otvet)
+elif k=='*':
+    otvet=a*b
+    print(otvet)
+else:
+    print('Неверная операция')
