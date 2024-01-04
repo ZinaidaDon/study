@@ -1,0 +1,10 @@
+s=input()
+flag=0
+for i in range(len(s)):
+    if s[i] in '0123456789':
+        flag+=1
+        #print(flag)
+if flag>0: 
+    print('Цифра')
+else:
+    print('Цифр нет')
