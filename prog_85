@@ -1,0 +1,18 @@
+num=int(input())
+flag=0
+i=0
+a1=10
+while num!=0:
+    a=num%10
+    num=num//10
+    i+=1
+    #print("-a", a)
+    if a>=a1:
+        flag+=1
+        
+    a1=a
+    
+if flag==i-1:
+    print('YES')
+else:
+    print('NO')
