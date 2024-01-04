@@ -1,0 +1,9 @@
+s=input()
+counter=0
+for i in range(len(s)):
+    a=s[i]
+    b=a.lower()
+    if a==b and b in 'qwertyuiopasdfghjklzxcvbnm':
+        #print(a)
+        counter+=1
+print(counter)
