@@ -1,0 +1,3 @@
+S, V1, V2=float(input()), float(input()), float(input())
+t=S/(V1+V2)
+print(t)
