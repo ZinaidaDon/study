@@ -1,0 +1,2 @@
+firstname, lastname=str(input()), str(input())
+print('Hello '+firstname+' '+lastname+'! You have just delved into Python')
