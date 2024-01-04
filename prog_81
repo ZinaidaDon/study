@@ -1,0 +1,3 @@
+num=int(input())
+s=str(num)
+print(max(s), min(s))
