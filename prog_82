@@ -1,0 +1,17 @@
+num=int(input())
+a=0
+total=0
+i=0
+k=1
+first=num
+while num!=0:
+    a=num%10
+    total+=a   # сумму его цифр;
+    num=num//10
+    i+=1   # количество цифр в нем;
+    k*=a   # произведение его цифр;
+l=first%10
+first=first//(10**(i-1))   # его первую цифру;
+l=l+first   # сумму его первой и последней цифры.
+s=total/i   # среднее арифметическое его цифр;
+print(total, i, k, s, first, l, sep='\n')
