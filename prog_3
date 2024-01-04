@@ -1,0 +1,9 @@
+num=int(input())
+pervoe=num//1000
+vtoroe=num//100-pervoe*10
+tretee=(num-pervoe*1000-vtoroe*100)//10
+setvertoe=num%10
+if pervoe+setvertoe==vtoroe-tretee:
+    print('ДА')
+else:
+    print('НЕТ')
