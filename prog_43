@@ -1,0 +1,7 @@
+a, b=float(input()), float(input())
+import math
+ar=(a+b)/2
+geo=math.sqrt(a*b)
+gar=2*a*b/(a+b)
+kva=math.sqrt((a*a+b*b)/2)
+print(ar, geo, gar, kva, sep='\n')
