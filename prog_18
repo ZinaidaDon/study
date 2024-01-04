@@ -1,0 +1,8 @@
+a, b, k=int(input()), int(input()), int(input())
+if a>b>k or a<b<k:
+    print (b)
+elif a>k>b or b>k>a:
+    print(k)
+elif b>a>k or k>a>b:
+    print(a)
+    
