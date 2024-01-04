@@ -1,0 +1,7 @@
+n=int(input())
+if 0<n<=2:
+    age=10.5*n
+    print(age)
+else:
+    age=21+(n-2)*4
+    print(age)
