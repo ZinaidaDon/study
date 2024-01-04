@@ -1,0 +1,4 @@
+n, a=float(input()), float(input())
+from math import tan, pi
+S=n*a*a/(4*tan(pi/n))
+print(S)
