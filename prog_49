@@ -1,0 +1,4 @@
+n=str(input())
+t=int(input())
+for i in range(t):
+    print(n)
