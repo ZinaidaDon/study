@@ -1,0 +1,14 @@
+a=int(input())
+b=int(input())
+sum_delitelej=0
+max_sum=0
+max_i=0
+for i in range(a, b+1):
+    for j in range (1, i+1):
+        if i%j==0:
+            sum_delitelej+=j
+            if max_sum<=sum_delitelej:
+                max_sum=sum_delitelej
+                max_i=i
+    sum_delitelej=0
+print(max_i, max_sum)
