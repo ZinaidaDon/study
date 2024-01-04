@@ -1,0 +1,4 @@
+x=float(input())
+import math
+a=math.floor(x)+math.ceil(x)
+print(a)
