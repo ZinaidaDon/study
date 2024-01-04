@@ -1,0 +1,8 @@
+n=int(input())
+counter_delitelej=0
+for stroka in range(1, n+1):
+    print(stroka, end='')
+    for num in range (1, stroka+1):
+        if stroka%num==0:
+            print('+', end='')
+    print('')
