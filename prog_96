@@ -1,0 +1,8 @@
+num=input()
+Sum=0
+for i in range(len(num)):
+#    print(num[i])
+    a=int(num[i])
+#    print(a)
+    Sum+=a
+print(Sum)
