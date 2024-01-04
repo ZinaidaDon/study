@@ -1,0 +1,8 @@
+num=int(input())
+a=num//100
+b=(num-a*100)//10
+c=num%10
+if max(a, b, c)-min(a, b, c)==a+b+c-max(a, b, c)-min(a, b, c):
+    print('Число интересное')
+else:
+    print('Число неинтересное')
