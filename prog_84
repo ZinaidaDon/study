@@ -1,0 +1,8 @@
+num=int(input())
+num=str(num)
+a=max(num)
+b=min(num)
+if a!=b:
+    print('NO')
+else:
+    print('YES')
