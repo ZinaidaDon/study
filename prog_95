@@ -1,0 +1,4 @@
+stroka=input()
+for i in range(len(stroka)):
+    k=len(stroka)-i-1
+    print(stroka[k])
