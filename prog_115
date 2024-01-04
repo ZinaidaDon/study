@@ -1,0 +1,8 @@
+s=input()
+a=s.find('h')+1
+b=s.rfind('h')
+s_0=s[:a]
+s_1=s[a:b]
+s_1=s_1[::-1]
+s_2=s[b:]
+print(s_0+s_1+s_2)
