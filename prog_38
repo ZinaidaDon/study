@@ -1,0 +1,9 @@
+a1, b1, c1=str(input()), str(input()), str(input())
+a=len(a1)
+b=len(b1)
+c=len(c1)
+p=a+b+c-max(a, b, c)-min(a, b, c)
+if max(a, b, c)-p==p-min(a, b, c):
+    print('YES')
+else:
+    print('NO')
