@@ -1,0 +1,17 @@
+a1, b1, a2, b2=int(input()), int(input()), int(input()), int(input())
+if (a1>a2 and b1>b2) or (a1>a2 and b1<b2) or (a1>a2 and b1==b2):
+    a=a2
+    b=b2
+    a2=a1
+    b2=b1
+else:
+    a=a1
+    b=b1
+if a2>=a and b2<=b:
+    print (a2, b2)
+elif b==a2:
+    print(a2)
+elif b<a2:
+    print('пустое множество')
+elif a2>=a and b2>=b:
+    print(a2, b)
