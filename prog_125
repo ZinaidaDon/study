@@ -1,0 +1,13 @@
+n=int(input())
+Negatives=[]
+Zeros=[]
+Positives=[]
+for i in range(n):
+    num=int(input())
+    if num<0:
+        Negatives.append(num)
+    if num==0:
+        Zeros.append(num)
+    if num>0:
+        Positives.append(num)
+print(*Negatives, *Zeros, *Positives, sep='\n')
