@@ -1,0 +1,12 @@
+n=int(input())
+ml=[]
+for i in range(n):
+    s=input()
+    ml.append(s)
+Find=input()
+Find = Find.lower()
+for i in range(n):
+    a=ml[i]
+    b=a.lower()
+    if Find in b:
+            print(a)
