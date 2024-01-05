@@ -1,0 +1,13 @@
+n=int(input())
+ml=[]
+stroka=''
+for i in range(n):
+    s=input()
+    ml.append(s)
+k=int(input())
+for i in range(n):
+    a=ml[i]
+    if len(a)>=k:
+        stroka+=a[k-1]
+print(stroka)
+        
