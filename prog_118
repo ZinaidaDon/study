@@ -1,0 +1,6 @@
+mylist = []
+a=0
+for i in range (97, 123):    #97 это номер строчной буквы а в юникоде, соответственнно 122 это буква зед
+    a+=1
+    mylist.append(chr(i)*a)
+print(mylist)
