@@ -1,0 +1,7 @@
+n=int(input())
+ml=[]
+for i in range(n):
+    num=int(input())
+    ml.append(num)
+del ml[1::2]
+print(ml)  
