@@ -1,0 +1,11 @@
+n=int(input())
+ml=[]
+ml_1=[]
+for i in range (n):
+    s=input()
+    ml.append(s)
+for i in range(n):
+    a=ml[i]
+    if a not in ml_1:
+        ml_1.append(a)
+print(*ml_1, sep='\n')
