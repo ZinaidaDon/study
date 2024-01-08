@@ -1,0 +1,1 @@
+ml=[print(int(i)**3, end=' ') for i in input().split()]
