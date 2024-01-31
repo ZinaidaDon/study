@@ -1,0 +1,26 @@
+# объявление функции
+def is_password_good(password):
+    flag1, flag2, flag3, flag4 = False, False, False, False     
+    if len(password)>7:
+        flag2 = True     # длина не менее 8
+        if flag2 == True:
+            for i in range (len(password)):
+                a=password[i]
+                b=a.lower()
+                c=a.upper()
+                if a==b and 96 < ord(b) < 123:
+                    flag1 = True     # есть строчная
+                if a==c and 64 < ord(c) < 91:
+                    flag3 = True     # есть заглавная
+                if a.isdigit()==True:
+                    flag4=True     # есть цифры
+                if flag3 == True and flag1 == True and flag4 == True:
+                    return True
+    if flag2 == False or flag1 == False or flag3 == False or flag4 == False:
+        return False
+       
+# считываем данные
+txt = input()
+
+# вызываем функцию
+print(is_password_good(txt))
