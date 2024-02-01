@@ -1,0 +1,43 @@
+def is_palindrome(text):  
+    counter = 0
+    for i in range(len(text)//2):
+        a=text[i]
+        k=len(text) - i - 1
+        b=text[k]
+        if a==b:
+            counter +=1
+            if counter==len(text)//2:
+                return True
+    return False
+
+def is_prime(num):    # проверка второго числа на количество делителей (простое или составное)
+    counter = 0
+    if num == 1:
+        return False
+    else :
+        for i in range (2, num//2 + 1):
+            if num%i==0:
+                counter +=1
+        if counter >=1:
+            return False
+        else:
+            return True
+
+# объявление функции
+def is_valid_password(password):
+    numbers = password.split(':')  # делим полученный пароль на 3 кусочка список из 3 строк, разделитель ':'
+    if len(numbers)!=3:
+        return False
+    first=numbers[0] 
+    second=int(numbers[1])    # 2 и 3 строку переводим в числовое значение
+    third=int(numbers[2])
+    if is_palindrome(first)==True and is_prime(second)==True and third%2==0: # 3 условие чётность
+        return True
+    else:
+        return False
+
+# считываем данные
+psw = input()
+
+# вызываем функцию
+print(is_valid_password(psw))
